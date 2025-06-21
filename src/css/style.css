@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    padding: 1rem 2rem;
+    border: 1px solid #000000;
+}
+
+header h2 {
+    font-size: 1.8rem;
+    color: #076aebc2;
+}
+
+/* Parte principal */
+main {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+#form-task form {
+    padding: 2rem 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#text-task {
+    padding: 0.6rem 1.5rem;
+    width: 30vw;
+    outline: none;
+    border-radius: 25px;
+    border: 3px solid #bebdbd;
+    background-color: #f5f5f5;
+}
+
+#btn-create {
+    padding: 0.5rem 1rem;
+    margin-left: 5px;
+    border-radius: 20px;
+    background-color: #4083ff;
+    font-weight: 600;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+#btn-create:hover {
+    opacity: 1;
+    transition: ease-in-out 0.1s;
+}
+
+/* cards  */
+
+#container-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 2rem;
+    gap: 30px;
+}
+
+.box-card {
+    padding: 2rem 2rem;
+    max-width: 600px;
+}
+
+.box-card .card {
+
+    background-color: #252525;
+    padding: 5rem 1.7rem;
+    color: #fff;
+    border-radius: 10px;
+    width: 400px;
+    margin-top: 10px;
+    height: auto;
+
+}
+
+.card.active {
+    outline: 5px solid #4083ff;
+    transition: ease-in-out 0.2s;
+}
+
+.task-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #505050;
+    padding: 0.5rem 1.3em;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+.task-card button {
+    background: none;
+    cursor: pointer;
+    opacity: 0.9;
+
+}
+
+.task-card button:hover {
+    opacity: 1;
+}
+
+.task-card img {
+    width: 33px;
+
+}
+
+.task-card .bad img {
+    width: 28px;
+
+}
+
+.card .delete {
+    background-color: none;
+}
+
+.card .delete img {
+    width: 35px;
+}

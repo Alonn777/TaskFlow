@@ -1,3 +1,4 @@
+
 // puxando os elementos do html
 const titleInput = document.querySelector('#title')
 const descriptionInput = document.querySelector('#description')

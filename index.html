@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,30 +16,56 @@
             <h2>TaskFlow</h2>
         </header>
         <main>
-            <div id="form-task">
-                <form>
-                    <input type="text"
-                        placeholder="crie uma tarefa para um setor"
-                        id="text-task">
+            <div id="form-box">
+                <form id="form-task">
+                    <h3>Crie suas tarefas!</h3>
+                    <div class="box-input">
+                        <label for="title">Titulo:</label>
+                        <input type="text"
+                            placeholder="Titulo da tarefa"
+                            id="title" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="description">Descrição:</label>
+                        <input type="text" placeholder="Descrição da tarefa"
+                            id="description" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="select">prioridade:</label>
+                        <select name="prioridade" id="select">
+                            <option value="easy">Leve</option>
+                            <option value="mid">Moderado</option>
+                            <option value="hard">Dificil</option>
+                        </select> </div>
                     <button type="submit" id="btn-create"> Criar</button>
                 </form>
             </div>
+
             <div id="container-card">
                 <div class="box-card">
-                    <h3>Financeiro</h3>
+                    <h3>A fazer</h3>
                     <div class="card">
+                        <div id="task-initial">
+                            <div class="task">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="box-card">
-                    <h3>Estoque</h3>
+                    <h3>Fazendo</h3>
                     <div class="card">
+                        <div id="task-mid">
 
+                        </div>
                     </div>
                 </div>
                 <div class="box-card">
-                    <h3>Marketing</h3>
+                    <h3>Finalizada</h3>
                     <div class="card">
+                        <div id="task-end">
 
+                        </div>
                     </div>
                 </div>
             </div>

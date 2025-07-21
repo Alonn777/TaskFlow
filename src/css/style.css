@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     border: 0;
@@ -35,34 +33,40 @@ main {
     background-color: #2a2a4e;
     border-radius: 1rem;
 }
-#form-task h3{
+
+#form-task h3 {
     margin-bottom: 1rem;
     text-align: center;
     color: #2684ff;
 }
 
 .box-input {
-   color: #e2e2e2;
-    
+    color: #e2e2e2;
+
 }
-.box-input input, select{
+
+.box-input input,
+select {
     width: 75%;
     margin-bottom: 1rem;
     background-color: #222;
     padding: 0.4rem 0.6rem;
-    border-radius: 5px ;
+    border-radius: 5px;
     outline: none;
     color: #fff;
 }
-.box-input input::placeholder{
+
+.box-input input::placeholder {
     color: #cacaca;
 }
-.box-input select option{
+
+.box-input select option {
     color: #ffff;
 }
+
 .box-input label {
-display: block;
-font-size: 15px;
+    display: block;
+    font-size: 15px;
 }
 
 
@@ -80,7 +84,7 @@ font-size: 15px;
 #btn-create:hover {
     opacity: 1;
     transition: ease-in-out 0.1s;
-} 
+}
 
 /* cards  */
 
@@ -103,7 +107,7 @@ font-size: 15px;
 }
 
 .box-card .card {
-    background-color: #252525;
+    background-color: #242149;
     padding: 5rem 1.7rem;
     color: #fff;
     border-radius: 10px;
@@ -113,43 +117,79 @@ font-size: 15px;
 
 }
 
-
-/* .task-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #505050;
-    padding: 0.5rem 1.3em;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    font-size: 0.8rem;
+/* DOM */
+.task {
+    background-color: #383838;
+    padding: 1rem 1rem;
+    text-align: left;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-.task-card button {
-    background: none;
+.task h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.task .description {
+    font-size: 1rem;
+    color: #f5f5f5;
+}
+
+.task .priority-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    max-width: 82px;
+    text-align: center;
+    padding: 0.2rem 0.4rem;
+    border-radius: 20px;
+    margin-top: 8px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.task button {
+    margin-left: 5px;
+}
+
+.task .btn-make {
+    background-color: #2684ff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.task .delete {
+    background-color: #fa0000;
+    padding: 0.4rem 0.6rem;
+    border-radius: 7px;
+    font-weight: 600;
     cursor: pointer;
     opacity: 0.9;
-
 }
 
-.task-card button:hover {
+.task .finish {
+    background-color: #2684ff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.task .back-button, .back-button-mid {
+    background-color: #00ff40;
+    padding: 0.4rem 0.6rem;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.task .delete:hover,
+.btn-make:hover {
     opacity: 1;
+    transition: 0.2s ease-in;
 }
-
-.task-card img {
-    width: 33px;
-
-}
-
-.task-card .bad img {
-    width: 28px;
-
-}
-
-.card .delete {
-    background-color: none;
-}
-
-.card .delete img {
-    width: 35px;
-} */
